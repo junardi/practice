@@ -7,7 +7,7 @@ app.controller("homeCtrl", function($scope){
 
 app.controller("aboutCtrl", function($scope){
 
-	$scope.title = "About Us";
+	$scope.title = "About";
 
 });     
 
