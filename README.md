@@ -1,4 +1,4 @@
 # practice
 
-This project is for the practice of the Angular
+This is the Final Training of Git for Angular
 Another Update in the Readme.md
