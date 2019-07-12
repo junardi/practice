@@ -13,6 +13,7 @@ app.config(function($routeProvider, $locationProvider) {
     controller: "contactCtrl"
   });    
 
+  $locationProvider.hashPrefix('!');
   $locationProvider.html5Mode(true);
 
 });
