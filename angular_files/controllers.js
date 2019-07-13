@@ -27,7 +27,28 @@ app.controller("routeParamsCtrl", function($scope, $route, $routeParams, $locati
 	$scope.$route = $route;
     $scope.$location = $location;
     $scope.$routeParams = $routeParams;
-});
+});   
+
+
+app.controller( 'chatboxCtrl', [ 'Messages', '$scope', function( Messages, $scope ) {
+    
+    $scope.title = "The Chatbox";
+
+    // Message Inbox
+    $scope.messages = [];  
+    // Receive Messages
+    Messages.receive(function(message) {
+        $scope.messages.push(message);
+    });
+
+    Messages.user({ id: 1, name : "Mark" });
+    // Send Messages
+    $scope.send = function() {
+        Messages.send({   
+            data: $scope.textbox 
+        });
+    };
+}]);
 
 
 
