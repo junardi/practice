@@ -19,7 +19,15 @@ app.controller("contactCtrl", function($scope, $route, $routeParams, $location){
 	$scope.$route = $route;
     $scope.$location = $location;
     $scope.$routeParams = $routeParams;
-}); 
+});     
+
+
+app.controller("routeParamsCtrl", function($scope, $route, $routeParams, $location){
+	$scope.title = "Parameters Training";   
+	$scope.$route = $route;
+    $scope.$location = $location;
+    $scope.$routeParams = $routeParams;
+});
 
 
 

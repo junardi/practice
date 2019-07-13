@@ -8,6 +8,14 @@ app.config(function($routeProvider, $locationProvider) {
     templateUrl: "about.html", 
     controller: "aboutCtrl"
   })   
+  .when("/about/:paramName", {
+    templateUrl: "params.html", 
+    controller: "routeParamsCtrl"
+  })   
+  .when("/about/:bookId/ch/:chapterId", {
+    templateUrl: "params.html", 
+    controller: "routeParamsCtrl"
+  })
   .when("/contact", {
     templateUrl: "contact.html", 
     controller: "contactCtrl"
