@@ -2,9 +2,14 @@
 	<div class="col">  
 		<h1 class="mb-3">{{ title }}</h1>    
 		<p>This is my Final content from the  Contact Page</p>        
-		<form action="#" method="post">
-			<label for="name"></label>  
-			<input type="text" name="name" id="name">
-		</form>   
+		
+		<hr />
+
+		<pre>$location.path() = {{$location.path()}}</pre>
+		<pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
+		<pre>$route.current.params = {{$route.current.params}}</pre>
+		<pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
+		<pre>$routeParams = {{$routeParams}}</pre>    
+
 	</div>   
 </div>  
