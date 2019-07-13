@@ -19,7 +19,11 @@ app.config(function($routeProvider, $locationProvider) {
   .when("/contact", {
     templateUrl: "contact.html", 
     controller: "contactCtrl"
-  });    
+  })     
+  .when("/chatbox", {
+    templateUrl: "chatbox.html", 
+    controller: "chatboxCtrl"
+  });   
 
   $locationProvider.hashPrefix('!');
   $locationProvider.html5Mode(true);
